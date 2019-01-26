@@ -6,11 +6,8 @@ public class EnemySO : ScriptableObject
     public string name;
     public float speed;
     public Sprite image;
+    public int damage;
+    public int hp;
 
-
-    public void Walk()
-    {
-        
-    }
 
 }
