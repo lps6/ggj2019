@@ -1,10 +1,14 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
     public EnemySO enemy;
     public float speed = .3f;
+    public int damage;
+    public int hp = 5;
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,5 +37,10 @@ public class Enemy : MonoBehaviour
     {
         int dir = CompareTag("Enemy") ? -1 : 1;
         transform.position += new Vector3(dir, 0, 0);
+    }
+
+    public static implicit operator Enemy(Collider2D v)
+    {
+        throw new NotImplementedException();
     }
 }
