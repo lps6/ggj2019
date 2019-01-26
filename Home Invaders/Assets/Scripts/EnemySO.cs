@@ -6,4 +6,11 @@ public class EnemySO : ScriptableObject
     public string name;
     public float speed;
     public Sprite image;
+
+
+    public void Walk()
+    {
+        
+    }
+
 }
