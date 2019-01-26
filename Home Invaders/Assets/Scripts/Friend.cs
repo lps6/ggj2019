@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class EnemyDisplay : MonoBehaviour
+public class FriendDisplay : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
