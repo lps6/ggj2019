@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shoot : Damager
+public class Shoot : MonoBehaviour
 {
 
-    public float speed = .3f;
+    public float speed = 9;
     public Enemy enemyTest;
+    public int friend;
+    public int friendDmg;
+    public int enemyHP;
 
 
     // Start is called before the first frame update
@@ -28,29 +31,32 @@ public class Shoot : Damager
 
         if (collision.CompareTag("Enemy"))
         {
-            collision.GetComponent<Enemy>().hp--;
+            //o que acontece com o cara 
 
+            enemyHP = collision.GetComponent<Enemy>().hp;
+            print("hp inimigo" + enemyHP);
+            if(enemyHP > 0)
+            {
+                enemyHP -= friendDmg;
+                print("hp inimigo" + enemyHP);
+                Destroy(gameObject);
+            }
 
-            //O que acontece com o cara
-            Destroy(gameObject);
+            else
+            {
+
+                Destroy(collision.gameObject); // inimigo
+                Destroy(gameObject); //bala
+            }
+        }
+
+        else
+        {
+            print("ta colidindo com gato");
+            //shooterFriend.damage = collision.GetComponent<Friend>().damage;
+            friendDmg = collision.GetComponent<Friend>().damage;
         }
 
     }
 }
 
-public class Damager : MonoBehaviour
-{
-    public int damage;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-}
