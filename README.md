@@ -42,11 +42,11 @@ Visão Global do Jogo
 Gameplay e Modos de Jogo
 ------------------------
 
-**Gameplay** : Inspirado em tower defenses como plants vs zombies, HOME INVADERS exige que cada player monte uma estratégia de mitigar os danos causados pelas coisas e atividades que nos deixam "na bad" com as coisas, companhias e atividades "good vibes".
-**Objetivo primário**: Sobreviver até o final da ultima wave.
-**Objetivos a longo prazo**: 
-**Condições de derrota**: Deixar que as responsabilidades da vida adulta entulhem sua casa.
-**Condição de vitória**: Sobreviver ao ataque das responsabilidades balanceando com todas as coisas lindas que fazem das nossas casas nosso lares.
++ **Gameplay** : Inspirado em tower defenses como plants vs zombies, HOME INVADERS exige que cada player monte uma estratégia de mitigar os danos causados pelas coisas e atividades que nos deixam "na bad" com as coisas, companhias e atividades "good vibes".
++ **Objetivo primário**: Sobreviver até o final da ultima wave.
++ **Objetivos a longo prazo**: 
++ **Condições de derrota**: Deixar que as responsabilidades da vida adulta entulhem sua casa.
++ **Condição de vitória**: Sobreviver ao ataque das responsabilidades balanceando com todas as coisas lindas que fazem das nossas casas nosso lares.
 
 Personagens 
 -------------
