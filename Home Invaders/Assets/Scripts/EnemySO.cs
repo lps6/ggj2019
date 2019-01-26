@@ -10,7 +10,7 @@ public class EnemySO : ScriptableObject
 
     public void Walk()
     {
-
+        
     }
 
 }

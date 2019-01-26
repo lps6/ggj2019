@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0edff5eebede20a45bb227ba5eaaf91b, type: 3}
-  m_Name: New Enemy
+  m_Name: Boleto
   m_EditorClassIdentifier: 
-  name: 
-  speed: 0
-  image: {fileID: 0}
+  name: Boleto
+  speed: 2
+  image: {fileID: 21300000, guid: f38c332473ffb604ba107b77f8a984e1, type: 3}
