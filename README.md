@@ -56,6 +56,6 @@ Em quadrinhos. SE DER TEMPO.
 
 Anexos
 -------
-## **REFERÊNCIAS**
+## **Referências**
 Plants Versus Zombies
 ## **Concept intro**
