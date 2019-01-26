@@ -35,12 +35,12 @@ Personagens
 ### **Good Vibes** 
 + **Pet** - Gato - Estático - Ataque Ranged (Yarn Ball) - 3 HP
 + **Barreiras** - Poltrona - Estática - 5 HP;
-+ **TV** -  
++ **TV** -  Gerador de GoodVibes
 
 
 ### **Bad Vibes** 
 + **Boletos** - Medium Speed - 1 ATK - 4 HP
-+ **Bagunça** 
++ **Roupa Suja** - Slow Speed - 3 ATK - 10 HP
 
 Mecâncias Adicionais
 ------
