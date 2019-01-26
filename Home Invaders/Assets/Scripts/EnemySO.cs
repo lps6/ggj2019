@@ -8,6 +8,4 @@ public class EnemySO : ScriptableObject
     public Sprite image;
     public int damage;
     public int hp;
-
-
 }
