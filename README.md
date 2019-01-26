@@ -33,13 +33,13 @@ Gameplay e Modos de Jogo
 Personagens 
 -------------
 ### **Good Vibes** 
-+ **Pet** - 
-+ **Sofá** - 
++ **Pet** - Gato - Estático - Ataque Ranged (Yarn Ball) - 3 HP
++ **Barreiras** - Poltrona - Estática - 5 HP;
 + **TV** -  
 
 
 ### **Bad Vibes** 
-+ **Boletos**
++ **Boletos** - Medium Speed - 1 ATK - 4 HP
 + **Bagunça** 
 
 Mecâncias Adicionais
