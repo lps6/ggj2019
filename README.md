@@ -3,7 +3,10 @@ HOME INVADERS - GGJ 2019
 GDD - Game Design Document
 (Documento de Game Design)
 
-Lucas Pires, lucaspiressilveira13@gmail.com, @lucas_p0
+Equipe:
+Producer / Manager - Lucas Pires, lucaspiressilveira13@gmail.com, @lucas_p0
+Desenvolvimento -
+Arte - 
 
 Visão Global do Jogo
 --------------------
