@@ -20,6 +20,7 @@ Visão Global do Jogo
 + **Número de levels** - 
 + **Plataforma** - Android
 + **Público-alvo** - Pessoas de qualquer gênero com acesso a um dispositivo Android.
+
 Gameplay e Modos de Jogo
 ------------------------
 
