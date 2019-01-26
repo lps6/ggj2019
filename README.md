@@ -32,13 +32,13 @@ Gameplay e Modos de Jogo
 
 Personagens 
 -------------
-### **Protagonista** 
+### **Good Vibes** 
 + **Pet** - 
 + **Sofá** - 
 + **TV** -  
 
 
-### NPCs (Personagens não jogáveis)
+### **Bad Vibes** 
 + **Boletos**
 + **Bagunça** 
 
