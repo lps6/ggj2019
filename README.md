@@ -17,7 +17,7 @@ Visão Global do Jogo
 
 **Objetivo** - Sobreviver a ondas de boletos a pagar, más notícias, coisas que quebram, roupa suja, etc. usando como defesa nosso pets, amigos, hobbies e atividades favoritos.
 
-**Enredo básico** -
+**Enredo básico** - Você acabou de se mudar para sua primeira casa própria e agora tem que torná-la um lar. Para compensar todas as responsabilidades dessa vida adulta, você decide adotar um pet, mas mesmo assim os boletos continuam vindo.
 
 **Monetização / Viabilidade financeira** - Jogo feito por amor e instiga.
 
@@ -42,9 +42,7 @@ Visão Global do Jogo
 Gameplay e Modos de Jogo
 ------------------------
 
-**Gameplay**
-Você acabou de se mudar para sua primeira casa própria e agora tem que torná-la um lar. Para compensar todas as responsabilidades dessa vida adulta, você decide adotar um pet, mas mesmo assim os boletos continuam vindo.
-
+**Gameplay** : Inspirado em tower defenses como plants vs zombies, HOME INVADERS exige que cada player monte uma estratégia de mitigar os danos causados pelas coisas e atividades que nos deixam "na bad" com as coisas, companhias e atividades "good vibes".
 **Objetivo primário**: Sobreviver até o final da ultima wave.
 **Objetivos a longo prazo**: 
 **Condições de derrota**: Deixar que as responsabilidades da vida adulta entulhem sua casa.
