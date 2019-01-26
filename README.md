@@ -3,10 +3,10 @@ HOME INVADERS - GGJ 2019
 GDD - Game Design Document
 (Documento de Game Design)
 
-Equipe:
-Producer / Manager - Lucas Pires, lucaspiressilveira13@gmail.com, @lucas_p0
-Desenvolvimento -
-Arte - 
+### Equipe:
++ Producer / Manager - Lucas Pires, lucaspiressilveira13@gmail.com, @lucas_p0
++ Desenvolvimento -
++ Arte - 
 
 Visão Global do Jogo
 --------------------
@@ -53,14 +53,14 @@ Você acabou de se mudar para sua primeira casa própria e agora tem que torná-
 Personagens 
 -------------
 ### **Protagonista** 
-**Pet** - 
-**Sofá** - 
-**TV** -  
++ **Pet** - 
++ **Sofá** - 
++ **TV** -  
 
 
 ### NPCs (Personagens não jogáveis)
-**Boletos**
-**Bagunça** 
++ **Boletos**
++ **Bagunça** 
 
 
 ### Achievements/badges (MAYBE)
