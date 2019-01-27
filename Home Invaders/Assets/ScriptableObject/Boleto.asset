@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Boleto
   speed: 2
-  image: {fileID: 21300000, guid: 63ddc6f293f9d4f40b7460eeada7975a, type: 3}
+  image: {fileID: 21300000, guid: c66134d50b90dce4783ee7e4919b061f, type: 3}
   damage: 1
   hp: 1
   delay: 1
