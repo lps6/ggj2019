@@ -21,7 +21,7 @@ public class Shoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += Vector3.right * speed;
+        transform.localPosition += Vector3.right * speed;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -29,8 +29,6 @@ public class Shoot : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             //o que acontece com o cara 
-
-            
             enemyHP = collision.GetComponent<Enemy>().enemy.hp;
             enemyHP -= friendDmg;
             print("hp inimigo" + enemyHP);

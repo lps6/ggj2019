@@ -23,12 +23,21 @@ public class Friend : MonoBehaviour
     void Start()
     {
         GetComponent<SpriteRenderer>().sprite = friend.image;
-        
 
-        print(friend.name);
+        if (friend.name == "gato")
+        {
+            StartCoroutine(Fire());
+        }
         //StartCoroutine(MoveRoutine());
     }
 
+
+    IEnumerator Fire()
+    {
+        Instantiate(Resources.Load("Prefabs/bala"), this.transform);
+        yield return new WaitForSeconds(5f);
+        StartCoroutine(Fire());
+    }
     // Update is called once per frame
     void Update()
     {
@@ -46,9 +55,6 @@ public class Friend : MonoBehaviour
             print("colide com bala");
             Destroy(collision2.gameObject);
         }
-
-
-
         else
         {
             MoveRoutine();
@@ -64,8 +70,6 @@ public class Friend : MonoBehaviour
 
 
     }
-
-
 }
 
 
