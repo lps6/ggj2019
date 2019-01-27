@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour
     public IEnumerator MoveRoutine()
     {
         Move();
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1/2);
         StartCoroutine(MoveRoutine());
     }
 
@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour
         if (canMove)
         {
             int dir = CompareTag("Enemy") ? -1 : 1;
-            transform.localPosition += new Vector3(dir, 0, 0);
+            transform.localPosition += new Vector3(dir, 0, 0) * enemy.speed/100;
         }
     }
 

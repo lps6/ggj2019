@@ -9,5 +9,5 @@ public class LevelSO : ScriptableObject
     public List<GameObject> availableEnemies = new List<GameObject>();
     public List<GameObject> availableRoutes = new List<GameObject>();
     public List<GameObject> availableFriends = new List<GameObject>();
-
+    public int hp;
 }

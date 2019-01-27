@@ -10,12 +10,15 @@ public class LevelManager : MonoBehaviour
 
     int totalEnemies = 0;
 
+    int current_hp = 0;
+
     private List<GameObject> routes = new List<GameObject>();
 
     void Start()
     {
         LoadRoutes();
         StartCoroutine(LoadEnemiesRoutine());
+        current_hp = level.hp;
     }
 
     void LoadRoutes()
@@ -33,6 +36,16 @@ public class LevelManager : MonoBehaviour
         if (totalEnemies < level.totalEnemies)
         {
             StartCoroutine(LoadEnemiesRoutine());
+        }
+    }
+
+    public void EnemyDamage()
+    {
+        current_hp--;
+
+        if(current_hp < 1)
+        {
+            print("game over");
         }
     }
 
