@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour
     public int hp = 5;
 
     public bool canMove = true;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +23,6 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
     }
 
     public IEnumerator MoveRoutine()

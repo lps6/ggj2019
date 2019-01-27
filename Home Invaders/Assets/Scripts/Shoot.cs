@@ -40,7 +40,6 @@ public class Shoot : MonoBehaviour
                 enemyHP -= friendDmg;
                 print("hp inimigo" + enemyHP);
                 Destroy(gameObject);
-               // gameObject.GetComponent<Friend>().speed = 0;
             }
 
             else
@@ -49,10 +48,6 @@ public class Shoot : MonoBehaviour
                 Destroy(collision.gameObject); // inimigo
                 Destroy(gameObject); //bala
             }
-
-
-            //se bater frinend
-
         }
 
         else
@@ -62,6 +57,8 @@ public class Shoot : MonoBehaviour
             friendDmg = collision.GetComponent<Friend>().damage;
         }
 
+                Destroy(collision.gameObject); // inimigo
+                Destroy(gameObject); //bala
     }
-}
 
+}

@@ -25,7 +25,6 @@ public class Friend : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
     }
 
     public IEnumerator MoveRoutine()
