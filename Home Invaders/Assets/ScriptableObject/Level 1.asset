@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f878d95e321c02740b82432a2364535b, type: 3}
   m_Name: Level 1
   m_EditorClassIdentifier: 
-  delay: 0
+  delay: 2
   availableEnemies: []
   availableRoutes: []
