@@ -5,10 +5,16 @@ public class Friend : MonoBehaviour
 {
     public FriendSO friend;
     //public float speed = .3f;
+
     public int damage = 4;
     public int hp = 5;
     //public float freio = 0.00f;
     //public bool canMove = true;
+
+    //public int damage;
+    //public int hp = 5;
+    //public float freio = 0.00f;
+
 
 
     public float Vec { get; private set; }
@@ -18,6 +24,7 @@ public class Friend : MonoBehaviour
     {
         GetComponent<SpriteRenderer>().sprite = friend.image;
         
+
         print(friend.name);
         //StartCoroutine(MoveRoutine());
     }
@@ -25,6 +32,10 @@ public class Friend : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //print(friend.name);
+        //StartCoroutine(MoveRoutine());
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision2)
@@ -57,4 +68,22 @@ public class Friend : MonoBehaviour
             transform.position += new Vector3(dir, 0, 0);
         }
     }
+
     */
+
+
+    private void OnTriggerEnter2D(Collider2D collision2)
+    {
+        if (collision2.CompareTag("Enemy"))
+        {
+            Destroy(collision2.gameObject);
+            //canMove = false;
+        }
+
+    }
+
+
+}
+
+
+
