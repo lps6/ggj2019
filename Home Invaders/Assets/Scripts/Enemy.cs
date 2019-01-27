@@ -31,6 +31,14 @@ public class Enemy : MonoBehaviour
         StartCoroutine(MoveRoutine());
     }
 
+    public IEnumerator BlockRoutine(GameObject go)
+    {
+        canMove = false;
+        yield return new WaitForSeconds(3f);
+        Destroy(go);
+        canMove = true;
+    }
+
     public void Move()
     {
         if (canMove)
@@ -43,8 +51,8 @@ public class Enemy : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision2)
     {
         if (collision2.CompareTag("Friend"))
-        {
-            canMove = false;
+        { 
+            StartCoroutine(BlockRoutine(collision2.gameObject));
         }
     }
 
