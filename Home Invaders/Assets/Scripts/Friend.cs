@@ -53,12 +53,12 @@ public class Friend : MonoBehaviour
         if (collision2.CompareTag("Enemy") == false)
         {
             print("colide com bala");
-            Destroy(collision2.gameObject);
+            //Destroy(collision2.gameObject);
         }
         else
         {
             MoveRoutine();
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
 
 
