@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5378429115048660332}
   - component: {fileID: 5378429115048660333}
   - component: {fileID: 7838767569643202142}
+  - component: {fileID: 6978465016155320125}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Untagged
@@ -95,3 +96,18 @@ MonoBehaviour:
   friend: {fileID: 11400000, guid: d45795b32e23da7488a9f057e4e5c336, type: 2}
   damage: 4
   hp: 5
+--- !u!111 &6978465016155320125
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5378429115048660323}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 03af047cf9e02444db316d7fee4ddd4f, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
