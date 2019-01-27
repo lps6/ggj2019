@@ -46,13 +46,26 @@ public class Friend : MonoBehaviour
             print("colide com bala");
         }
 
-        if (collision2.CompareTag("Enemy"))
-        {
-            Destroy(collision2.gameObject);
-            //canMove = false;
-        }
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+        else
+        {
+            MoveRoutine();
+            Destroy(gameObject);
+        }
     }
+
+    public IEnumerator MoveRoutine()
+    {
+        yield return new WaitForSeconds(3);
+
+=======
+>>>>>>> parent of d4cb80c... posição grid
+=======
+>>>>>>> parent of d4cb80c... posição grid
+    }
+
 
 }
 
@@ -76,6 +89,19 @@ public class Friend : MonoBehaviour
 
     */
 
+
+    private void OnTriggerEnter2D(Collider2D collision2)
+    {
+        if (collision2.CompareTag("Enemy"))
+        {
+            Destroy(collision2.gameObject);
+            //canMove = false;
+        }
+
+    }
+
+
+}
 
 
 
