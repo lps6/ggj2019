@@ -27,16 +27,15 @@ public class TileManager : MonoBehaviour
 
     public void Update()
     {
-        print(isClick);
         if (Input.GetMouseButtonDown(0) && isClick)
         {
 
             Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector3Int coordinate = grid.WorldToCell(mouseWorldPos);
-            //print(grid.GetComponentInChildren<Tilemap>().GetTile(coordinate));
             if (grid.GetComponentInChildren<Tilemap>().GetTile(coordinate))
             {
-                Instantiate(levelManager.level.availableFriends[0]).transform.position = grid.transform.GetChild(0).GetComponent<Tilemap>().GetCellCenterWorld(coordinate);
+                int enemyRandomIndex = UnityEngine.Random.Range(0, levelManager.level.availableFriends.Count);
+                Instantiate(levelManager.level.availableFriends[enemyRandomIndex]).transform.position = grid.transform.GetChild(0).GetComponent<Tilemap>().GetCellCenterWorld(coordinate);
                 grid.transform.GetChild(0).GetComponent<Tilemap>().SetTile(coordinate, null);
                 isClick = false;
                 StartCoroutine(ClickRoutine());
