@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level 1
   m_EditorClassIdentifier: 
   totalEnemies: 20
-  delay: 0.5
+  delay: 1
   availableEnemies:
   - {fileID: 2193586776354900131, guid: 298a44ab0d009b6458264259502ce766, type: 3}
   availableRoutes:
@@ -22,3 +22,5 @@ MonoBehaviour:
   - {fileID: 2492268636763434230, guid: 6d89095525f188649ac0fdc6830f376e, type: 3}
   - {fileID: 2492268636763434230, guid: 790165f7e85cf184eb72048e9e3ef718, type: 3}
   - {fileID: 2492268636763434230, guid: ab01bfb970abe314a8f456224094c25f, type: 3}
+  availableFriends:
+  - {fileID: 2958470102512168808, guid: 1ed8798cd5610884fa0555eadcbc690e, type: 3}

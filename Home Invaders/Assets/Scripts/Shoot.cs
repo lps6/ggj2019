@@ -51,7 +51,7 @@ public class Shoot : MonoBehaviour
         {
             print("ta colidindo com gato");
             //shooterFriend.damage = collision.GetComponent<Friend>().damage;
-            friendDmg = collision.GetComponent<Friend>().damage;
+            friendDmg = collision.GetComponent<Friend>().friend.damage;
         }
 
         Destroy(collision.gameObject); // inimigo

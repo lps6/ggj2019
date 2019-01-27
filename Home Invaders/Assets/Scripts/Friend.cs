@@ -4,10 +4,10 @@ using UnityEngine;
 public class Friend : MonoBehaviour
 {
     public FriendSO friend;
-    public float speed = .3f;
-    public int damage;
-    public int hp = 5;
-    public float freio = 0.00f;
+    //public float speed = .3f;
+    //public int damage;
+    //public int hp = 5;
+    //public float freio = 0.00f;
 
     public bool canMove = true;
 
@@ -18,13 +18,8 @@ public class Friend : MonoBehaviour
     {
         GetComponent<SpriteRenderer>().sprite = friend.image;
         
-        print(friend.name);
-        StartCoroutine(MoveRoutine());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        //print(friend.name);
+        //StartCoroutine(MoveRoutine());
     }
 
     public IEnumerator MoveRoutine()
@@ -45,10 +40,10 @@ public class Friend : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision2)
     {
-
         if (collision2.CompareTag("Enemy"))
         {
-            canMove = false;
+            Destroy(collision2.gameObject);
+            //canMove = false;
         }
 
     }
