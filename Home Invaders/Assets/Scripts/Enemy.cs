@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     public int damage;
     public int hp = 5;
 
+    public bool canMove = true;
 
     // Start is called before the first frame update
     void Start()
@@ -35,8 +36,21 @@ public class Enemy : MonoBehaviour
 
     public void Move()
     {
-        int dir = CompareTag("Enemy") ? -1 : 1;
-        transform.position += new Vector3(dir, 0, 0);
+        if (canMove)
+        {
+            int dir = CompareTag("Enemy") ? -1 : 1;
+            transform.position += new Vector3(dir, 0, 0);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision2)
+    {
+
+        if (collision2.CompareTag("Friend"))
+        {
+            canMove = false;
+        }
+
     }
 
     public static implicit operator Enemy(Collider2D v)
