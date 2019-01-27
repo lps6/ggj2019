@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     public EnemySO enemy;
     public float speed = .3f;
     public int damage;
-    public int hp = 5;
+    public int hp = 4;
 
     public bool canMove = true;
     
