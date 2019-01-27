@@ -20,11 +20,13 @@ public class TileManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+
             Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector3Int coordinate = grid.WorldToCell(mouseWorldPos);
-         
+            print(grid.GetComponentInChildren<Tilemap>().GetTile(coordinate));
             if (grid.GetComponentInChildren<Tilemap>().GetTile(coordinate))
             {
+                print("1");
                 Instantiate(levelManager.level.availableFriends[0]).transform.position = grid.transform.GetChild(0).GetComponent<Tilemap>().GetCellCenterWorld(coordinate);
                 grid.transform.GetChild(0).GetComponent<Tilemap>().SetTile(coordinate, null);
             }
