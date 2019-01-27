@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f878d95e321c02740b82432a2364535b, type: 3}
   m_Name: Level 1
   m_EditorClassIdentifier: 
-  delay: 2
-  availableEnemies: []
-  availableRoutes: []
+  totalEnemies: 20
+  delay: 0.5
+  availableEnemies:
+  - {fileID: 2193586776354900131, guid: 298a44ab0d009b6458264259502ce766, type: 3}
+  availableRoutes:
+  - {fileID: 6246750205256521980, guid: ecdc3a4bb458e274b94eb17f35439709, type: 3}
+  - {fileID: 8073395798535337576, guid: 22c7ad22394f51c488061d04d2363844, type: 3}
+  - {fileID: 2492268636763434230, guid: 6d89095525f188649ac0fdc6830f376e, type: 3}
+  - {fileID: 2492268636763434230, guid: 790165f7e85cf184eb72048e9e3ef718, type: 3}
+  - {fileID: 2492268636763434230, guid: ab01bfb970abe314a8f456224094c25f, type: 3}
