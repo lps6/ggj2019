@@ -24,3 +24,4 @@ MonoBehaviour:
   - {fileID: 2492268636763434230, guid: ab01bfb970abe314a8f456224094c25f, type: 3}
   availableFriends:
   - {fileID: 5378429115048660323, guid: d93d2218b5d863342a62e33a192b1130, type: 3}
+  hp: 5
