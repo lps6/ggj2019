@@ -57,6 +57,8 @@ public class Shoot : MonoBehaviour
             friendDmg = collision.GetComponent<Friend>().damage;
         }
 
+                Destroy(collision.gameObject); // inimigo
+                Destroy(gameObject); //bala
     }
-}
 
+}
