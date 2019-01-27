@@ -96,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.03
   enemyTest: {fileID: 0}
-  friendDmg: 3
+  friendDmg: 5
   enemyHP: 5
 --- !u!50 &1211082858929729470
 Rigidbody2D:

@@ -34,21 +34,22 @@ public class Shoot : MonoBehaviour
             //o que acontece com o cara 
             
             enemyHP = collision.GetComponent<Enemy>().hp;
-            
-            if(enemyHP > 0)
+            enemyHP -= friendDmg;
+
+            if (enemyHP > 0)
             {
-                enemyHP -= friendDmg;
                 print("hp inimigo" + enemyHP);
                 Destroy(gameObject);
             }
 
             else
             {
-
+                
                 Destroy(collision.gameObject); // inimigo
                 Destroy(gameObject); //bala
             }
         }
+        
 
         else
         {
