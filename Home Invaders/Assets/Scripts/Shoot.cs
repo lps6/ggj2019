@@ -53,7 +53,6 @@ public class Shoot : MonoBehaviour
         else
         {
             print("ta colidindo com gato");
-            //shooterFriend.damage = collision.GetComponent<Friend>().damage;
             friendDmg = collision.GetComponent<Friend>().friend.damage;
             print("friend Damage eh" + friendDmg);
         }
