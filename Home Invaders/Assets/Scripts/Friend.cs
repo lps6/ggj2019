@@ -46,6 +46,7 @@ public class Friend : MonoBehaviour
             print("colide com bala");
         }
 
+
         else
         {
             MoveRoutine();
@@ -56,7 +57,7 @@ public class Friend : MonoBehaviour
     public IEnumerator MoveRoutine()
     {
         yield return new WaitForSeconds(3);
-        
+
     }
 
 }
