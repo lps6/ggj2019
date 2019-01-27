@@ -46,11 +46,17 @@ public class Friend : MonoBehaviour
             print("colide com bala");
         }
 
-        if (collision2.CompareTag("Enemy"))
+
+        else
         {
-            Destroy(collision2.gameObject);
-            //canMove = false;
+            MoveRoutine();
+            Destroy(gameObject);
         }
+    }
+
+    public IEnumerator MoveRoutine()
+    {
+        yield return new WaitForSeconds(3);
 
     }
 
