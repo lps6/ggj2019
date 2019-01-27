@@ -47,6 +47,7 @@ public class Friend : MonoBehaviour
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         else
         {
@@ -59,6 +60,8 @@ public class Friend : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
 
+=======
+>>>>>>> parent of d4cb80c... posição grid
 =======
 >>>>>>> parent of d4cb80c... posição grid
     }
