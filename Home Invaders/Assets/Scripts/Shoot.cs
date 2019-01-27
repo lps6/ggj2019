@@ -5,7 +5,7 @@ using UnityEngine;
 public class Shoot : MonoBehaviour
 {
 
-    public float speed = 20;
+    public float speed = 70;
     public Enemy enemyTest;
     //public int friend;
     public int friendDmg;

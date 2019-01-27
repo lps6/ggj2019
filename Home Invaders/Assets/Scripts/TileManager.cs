@@ -30,7 +30,7 @@ public class TileManager : MonoBehaviour
     IEnumerator ClickRoutine()
     {
         currentFriendScreen.SetActive(false);
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2.5f);
         currentFriendScreen.SetActive(true);
         friendRandomIndex = UnityEngine.Random.Range(0, levelManager.level.availableFriends.Count);
         currentFriendScreen.GetComponent<SpriteRenderer>().sprite = levelManager.level.availableFriends[friendRandomIndex].GetComponent<Friend>().friend.image;
