@@ -15,27 +15,24 @@ public class Shoot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
         transform.position += Vector3.right * speed;
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
         if (collision.CompareTag("Enemy"))
         {
             //o que acontece com o cara 
 
-            enemyHP = collision.GetComponent<Enemy>().hp;
+            enemyHP = collision.GetComponent<Enemy>().enemy.hp;
             print("hp inimigo" + enemyHP);
-            if(enemyHP > 0)
+            if (enemyHP > 0)
             {
                 enemyHP -= friendDmg;
                 print("hp inimigo" + enemyHP);
@@ -57,8 +54,8 @@ public class Shoot : MonoBehaviour
             friendDmg = collision.GetComponent<Friend>().damage;
         }
 
-                Destroy(collision.gameObject); // inimigo
-                Destroy(gameObject); //bala
+        Destroy(collision.gameObject); // inimigo
+        Destroy(gameObject); //bala
     }
 
 }

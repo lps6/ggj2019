@@ -6,26 +6,43 @@ public class LevelManager : MonoBehaviour
 {
     public LevelSO level;
 
+    float currentEnemyDelay = 0f;
+
+    int totalEnemies = 0;
+
+    private List<GameObject> routes = new List<GameObject>();
+
     void Start()
     {
-        LoadWaves();
+        LoadRoutes();
+        StartCoroutine(LoadEnemiesRoutine());
     }
 
-    void LoadWaves()
+    void LoadRoutes()
     {
         foreach (GameObject route in level.availableRoutes)
         {
-            StartCoroutine(LoadEnemies(Instantiate(route)));
+            routes.Add(Instantiate(route));
         }
     }
 
-    IEnumerator LoadEnemies(GameObject route)
+    public IEnumerator LoadEnemiesRoutine()
     {
-        foreach (GameObject enemy in level.availableEnemies)
+        LoadEnemies();
+        yield return new WaitForSeconds(level.delay + currentEnemyDelay);
+        if (totalEnemies < level.totalEnemies)
         {
-            GameObject current_enemy = Instantiate(enemy);
-            current_enemy.transform.parent = route.transform;
-            yield return new WaitForSeconds(level.delay + enemy.GetComponent<Enemy>().enemy.delay);
+            StartCoroutine(LoadEnemiesRoutine());
         }
+    }
+
+    void LoadEnemies()
+    {
+        GameObject enemy;
+        int enemyRandomIndex = Random.Range(0, level.availableEnemies.Count);
+        int routeRandomIndex = Random.Range(0, level.availableRoutes.Count);
+        enemy = Instantiate(level.availableEnemies[enemyRandomIndex], routes[routeRandomIndex].transform);
+        currentEnemyDelay = enemy.GetComponent<Enemy>().enemy.delay;
+        totalEnemies++;
     }
 }
