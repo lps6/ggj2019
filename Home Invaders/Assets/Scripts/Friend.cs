@@ -5,6 +5,8 @@ public class Friend : MonoBehaviour
 {
     public FriendSO friend;
     public float speed = .3f;
+    public int damage;
+    public int hp = 5;
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +20,6 @@ public class Friend : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
     }
 
     public IEnumerator MoveRoutine()
