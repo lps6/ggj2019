@@ -4,9 +4,9 @@ GDD - Game Design Document
 (Documento de Game Design)
 
 ### Equipe:
-+ Producer / Manager - Lucas Pires, lucaspiressilveira13@gmail.com, @lucas_p0
-+ Desenvolvimento -
-+ Arte - 
++ Producer / Manager - Lucas Pires (lucaspiressilveira13@gmail.com) ;
++ Desenvolvimento - Luana Campos (lca3@cin.ufpe.br), Carolina Melo (caroolpmelo@gmail.com), Danillo Rios (dlsr@cin.ufpe.br) ;
++ Arte - Victor Maristane (victor.maristane@gmail.com) ;
 
 Visão Global do Jogo
 --------------------
@@ -17,7 +17,7 @@ Visão Global do Jogo
 + **Monetização / Viabilidade financeira** - Jogo feito por amor e instiga.
 + **Gênero** - Tower Defense
 + **Câmera**  - 2D Perspective
-+ **Número de levels** - 
++ **Número de levels** - Tutorial + 1 Lvl
 + **Plataforma** - Android
 + **Público-alvo** - Pessoas de qualquer gênero com acesso a um dispositivo Android.
 
@@ -33,26 +33,26 @@ Gameplay e Modos de Jogo
 Personagens 
 -------------
 ### **Good Vibes** 
-+ **Pet** - 
-+ **Sofá** - 
-+ **TV** -  
++ **Pet** - Gato - Estático - Ataque Ranged (Yarn Ball) - 3 HP
++ **Barreiras** - Poltrona - Estática - 5 HP;
++ **TV** -  Gerador de GoodVibes
 
 
 ### **Bad Vibes** 
-+ **Boletos**
-+ **Bagunça** 
++ **Boletos** - Medium Speed - 1 ATK - 4 HP
++ **Roupa Suja** - Slow Speed - 3 ATK - 10 HP
 
 Mecâncias Adicionais
 ------
-+ ### Achievements/badges (MAYBE)
-+ ### Powerups  (MAYBE)
++ ### Achievements/badges
++ ### Powerups
 + ### Pontuação
 
 Identidade visual e Interface
 -----------------------------
 + ### **Paleta de cores**: 
 + ### **Abertura**
-Em quadrinhos. SE DER TEMPO.
+  + Em quadrinhos. SE DER TEMPO.
 
 Anexos
 -------

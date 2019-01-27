@@ -5,9 +5,9 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public EnemySO enemy;
-    public float speed = .3f;
-    public int damage;
-    public int hp = 5;
+    //public float speed = .3f;
+    //public int damage;
+    //public int hp = 5;
 
     public bool canMove = true;
     
@@ -15,20 +15,13 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         GetComponent<SpriteRenderer>().sprite = enemy.image;
-
-        print(enemy.name);
         StartCoroutine(MoveRoutine());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 
     public IEnumerator MoveRoutine()
     {
         Move();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         StartCoroutine(MoveRoutine());
     }
 
@@ -37,18 +30,16 @@ public class Enemy : MonoBehaviour
         if (canMove)
         {
             int dir = CompareTag("Enemy") ? -1 : 1;
-            transform.position += new Vector3(dir, 0, 0);
+            transform.localPosition += new Vector3(dir, 0, 0);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision2)
     {
-
         if (collision2.CompareTag("Friend"))
         {
             canMove = false;
         }
-
     }
 
     public static implicit operator Enemy(Collider2D v)
