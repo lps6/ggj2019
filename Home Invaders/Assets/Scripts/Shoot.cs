@@ -5,9 +5,9 @@ using UnityEngine;
 public class Shoot : MonoBehaviour
 {
 
-    public float speed = 9;
+    public float speed = 20;
     public Enemy enemyTest;
-    public int friend;
+    //public int friend;
     public int friendDmg;
     public int enemyHP;
 
@@ -30,32 +30,37 @@ public class Shoot : MonoBehaviour
         {
             //o que acontece com o cara 
 
+            
             enemyHP = collision.GetComponent<Enemy>().enemy.hp;
+            enemyHP -= friendDmg;
             print("hp inimigo" + enemyHP);
+
             if (enemyHP > 0)
             {
-                enemyHP -= friendDmg;
                 print("hp inimigo" + enemyHP);
                 Destroy(gameObject);
             }
 
             else
             {
-
+                
                 Destroy(collision.gameObject); // inimigo
                 Destroy(gameObject); //bala
             }
         }
+        
 
         else
         {
             print("ta colidindo com gato");
             //shooterFriend.damage = collision.GetComponent<Friend>().damage;
             friendDmg = collision.GetComponent<Friend>().friend.damage;
+            print("friend Damage eh" + friendDmg);
         }
 
-        Destroy(collision.gameObject); // inimigo
-        Destroy(gameObject); //bala
+        //Destroy(collision.gameObject); // inimigo
+        //Destroy(gameObject); //bala
+
     }
 
 }
