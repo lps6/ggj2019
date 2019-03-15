@@ -4,7 +4,7 @@ GDD - Game Design Document
 (Documento de Game Design)
 
 ### Equipe:
-+ Producer / Manager - Lucas Pires (lucaspiressilveira13@gmail.com) ;
++ Producer / Manager / Dev - Lucas Pires (lucaspiressilveira13@gmail.com) ;
 + Desenvolvimento - Luana Campos (lca3@cin.ufpe.br), Carolina Melo (caroolpmelo@gmail.com), Danillo Rios (dlsr@cin.ufpe.br) ;
 + Arte - Victor Maristane (victor.maristane@gmail.com) ;
 
